@@ -1,10 +1,10 @@
-# UEC2DTA: A Contrastive Graph Framwork Integrating Pre-trained Uni-Mol and ESM2 for Drug-Target Affinity Prediction
+# BiCD-DTA: Bidirectional Contrastive Learning of Dual-View Representations for Drug–Target Affinity Prediction
 
-UEC2DTA is a deep learning model for Drug-Target Affinity (DTA) prediction, designed to effectively handle various scenarios including cold-start problems where either drugs, targets, or both are previously unseen.
+BiCD-DTA is a deep learning model for Drug-Target Affinity (DTA) prediction, designed to effectively handle various scenarios including cold-start problems where either drugs, targets, or both are previously unseen.
 
 ## Overview
 
-UEC2DTA leverages heterogeneous graph neural networks, contrastive learning, and state-of-the-art protein and molecule representation models (ESM and UniMol) to predict binding affinity between drugs and protein targets. The model can handle four experimental scenarios:
+BiCD-DTA leverages heterogeneous graph neural networks, contrastive learning, and state-of-the-art protein and molecule representation models (ESM and UniMol) to predict binding affinity between drugs and protein targets. The model can handle four experimental scenarios:
 
 - **S1**: Random entries (standard prediction)
 - **S2**: Unseen drugs (predicting with novel compounds)
@@ -92,7 +92,7 @@ python predict.py --dataset davis --scenario S1 --mode test --model_path /path/t
 
 ## Model Architecture
 
-UEC2DTA integrates several components:
+BiCD-DTA integrates several components:
 
 1. **Drug Representation**: 
    - Graph-based representation using molecular structure
